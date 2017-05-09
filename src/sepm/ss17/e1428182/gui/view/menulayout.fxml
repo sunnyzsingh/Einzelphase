@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="551.0" prefWidth="1300.0" style="-fx-background-color: black;" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sepm.ss17.e1428182.gui.controller.menulayoutcontroller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Box Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handlenewBox" text="New Box" />
+                  <MenuItem mnemonicParsing="false" onAction="#searchBox" text="Search Box" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Statistics">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showStatistics" text="Show Statistics" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Close">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

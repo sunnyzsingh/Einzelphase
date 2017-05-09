@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="724.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sepm.ss17.e1428182.gui.controller.reservationviewercontroller">
+   <children>
+      <SplitPane dividerPositions="0.3963210702341137" layoutX="200.0" layoutY="90.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="reservationTable" layoutX="17.0" layoutY="90.0" prefHeight="398.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="clientname" prefWidth="75.0" text="Client Name" />
+                      <TableColumn fx:id="Horsename" prefWidth="75.0" text="Horse Name" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="423.0" prefWidth="409.0" style="-fx-background-color: black;">
+               <children>
+                  <GridPane layoutX="48.0" layoutY="131.0" prefHeight="242.0" prefWidth="402.0" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="100.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="ID" textFill="WHITE">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label text="Client Name" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label text="Horse Name" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label text="Start Time" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label text="End Time" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="id" text="id" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="horsename" text="horse" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="clientnamelabel" text="client" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="starttime" text="start" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="endtime" text="end" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="14.0" layoutY="14.0" text="Reservation Details" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Apple SD GothicNeo ExtraBold" size="46.0" />
+                     </font>
+                  </Label>
+                  <ButtonBar layoutX="77.0" layoutY="418.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="296.0">
+                    <buttons>
+                        <Button mnemonicParsing="false" onAction="#search" text="Search" />
+                        <Button mnemonicParsing="false" onAction="#delete" text="Delete" />
+                      <Button mnemonicParsing="false" onAction="#onClickEdit" text="Edit" />
+                        <Button mnemonicParsing="false" onAction="#onClickclose" text="Cancel" />
+                    </buttons>
+                  </ButtonBar>
+                  <DatePicker fx:id="start" layoutX="6.0" layoutY="376.0" />
+                  <DatePicker fx:id="end" layoutX="221.0" layoutY="376.0" />
+                  <Label layoutX="14.0" layoutY="350.0" text="Start Time" textFill="WHITE">
+                     <font>
+                        <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="221.0" layoutY="353.0" text="End Time" textFill="WHITE">
+                     <font>
+                        <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

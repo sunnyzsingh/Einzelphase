@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="612.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sepm.ss17.e1428182.gui.controller.boxeditdialogcontroller">
+   <children>
+      <GridPane layoutX="5.0" layoutY="45.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="295.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="295.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Box Name" textFill="#fffdfd" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+               </font></Label>
+            <Label text="Size" textFill="#fffdfd" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+               </font></Label>
+            <Label text="Horse Name" textFill="#fffdfd" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+               </font></Label>
+            <Label text="Location" textFill="#fffdfd" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+               </font></Label>
+            <Label text="Windows" textFill="#fffdfd" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+               </font></Label>
+            <Label text="Litter" textFill="#fffdfd" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+               </font></Label>
+            <TextField fx:id="BoxName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="HorseName" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="Size" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Daily Rate" textFill="#fffdfd" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+               </font></Label>
+            <TextField fx:id="dailyRate" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Select Picture" textFill="#fffdfd" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="22.0" />
+               </font></Label>
+            <Button mnemonicParsing="false" onAction="#chooseImage" prefHeight="27.0" prefWidth="291.0" text="Choose Image" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ChoiceBox fx:id="position" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="windows" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="litter" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="332.0" layoutY="370.0" prefHeight="40.0" prefWidth="266.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleOk" text="Save" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="47.0" layoutY="28.0" text="New Box" textFill="#fffafa" underline="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Apple SD GothicNeo ExtraBold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
